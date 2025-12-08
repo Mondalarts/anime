@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demon Slayer S4 – Files</title>
+
+<style>
+    body {
+        margin: 0;
+        background: #000;
+        overflow-x: hidden;
+        font-family: monospace;
+        color: white;
+    }
+
+    /* BACKGROUND */
+    .japanese-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 26px;
+        display: flex;
+        flex-wrap: wrap;
+        opacity: 0.22;
+        pointer-events: none;
+        z-index: -1;
+    }
+
+    .japanese-bg span {
+        margin: 3px;
+        animation: glow 3s infinite alternate;
+        text-shadow: 0 0 10px #ff00e6, 0 0 15px #00baff;
+    }
+
+    @keyframes glow {
+        0% { opacity: 0.3; filter: blur(1px); }
+        100% { opacity: 1; filter: blur(0px); }
+    }
+
+    /* MAIN CONTAINER */
+    .container {
+        padding: 30px;
+    }
+
+    .header {
+        background: #e01874;
+        padding: 22px;
+        font-size: 26px;
+        border-radius: 5px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        box-shadow: 0 0 15px #e01874;
+    }
+
+    .episode-box {
+        background: rgba(20,20,20,0.8);
+        padding: 20px;
+        margin-bottom: 20px;
+        border: 3px solid #000;
+        border-radius: 8px;
+        backdrop-filter: blur(4px);
+    }
+
+    .download-btn {
+        background: #ff4095;
+        border: none;
+        padding: 12px 22px;
+        color: white;
+        font-size: 18px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: bold;
+        box-shadow: 0 0 10px #ff4095;
+    }
+
+    .download-btn:hover {
+        background: #ff1e7a;
+        box-shadow: 0 0 15px #ff1e7a;
+    }
+</style>
+
+</head>
+<body>
+
+<!-- BACKGROUND -->
+<div class="japanese-bg"></div>
+
+<div class="container">
+
+    <div class="header">🍿 DEMON SLAYER — S4 (DOWNLOAD ONLY)</div>
+
+    <!-- EPISODE LIST -->
+    <div class="episode-box">
+        EPISODE 1  
+        <br><br>
+        <a href="https://mega.nz/file/HRcUWZ5Q#HM-oSxgaJp2Xh_HsnvJ4V7Pc3aWLCxeLbIRf12SMVFg" target="_blank">
+            <button class="download-btn">↓ DOWNLOAD</button>
+        </a>
+    </div>
+
+    <div class="episode-box">
+        EPISODE 2  
+        <br><br>
+        <a href="https://mega.nz/file/TN0nVDxb#og0ygbN7Pd-AutQmQxAN8OrSOggeuIq8MtJ4LNS0QLE" target="_blank">
+            <button class="download-btn">↓ DOWNLOAD</button>
+        </a>
+    </div>
+
+    <div class="episode-box">
+        EPISODE 3  
+        <br><br>
+        <a href="https://mega.nz/file/DRcgVLjT#7k3UIL3kUrqu3SmjDMNfv0kTB7J2qb8fX039N9Yqbjs" target="_blank">
+            <button class="download-btn">↓ DOWNLOAD</button>
+        </a>
+    </div>
+
+    <div class="episode-box">
+        EPISODE 4  
+        <br><br>
+        <a href="https://mega.nz/file/6F11haBL#JMoFI7YvvoaO8nSVLuSeNmXWJRX20BTKMLOwD3dtnvw" target="_blank">
+            <button class="download-btn">↓ DOWNLOAD</button>
+        </a>
+    </div>
+
+    <div class="episode-box">
+        EPISODE 5  
+        <br><br>
+        <a href="https://mega.nz/file/zBF03YAa#GsIfflW4_f3t5aw7BhUWfa6FkFzUaGqf_2TXePwBwHw" target="_blank">
+            <button class="download-btn">↓ DOWNLOAD</button>
+        </a>
+    </div>
+
+    <div class="episode-box">
+        EPISODE 6  
+        <br><br>
+        <a href="https://mega.nz/file/6FsHVb5R#WZwN0nmtwC37TbbPBSXSh8jpdYv1N3-4SDIybf_SHdE" target="_blank">
+            <button class="download-btn">↓ DOWNLOAD</button>
+        </a>
+    </div>
+
+    <div class="episode-box">
+        EPISODE 7  
+        <br><br>
+        <a href="https://mega.nz/file/vcEwzbyK#F3-MIEDCyhQyC76U9BNEEPjLRq8WVlsAmDQNUGH_dGY" target="_blank">
+            <button class="download-btn">↓ DOWNLOAD</button>
+        </a>
+    </div>
+
+    <div class="episode-box">
+        EPISODE 8  
+        <br><br>
+        <a href="https://mega.nz/file/DdkyCSbZ#z2xRL0Q8xF87ohBk-HbPPwoakVi0iauegCicuT3q3wU" target="_blank">
+            <button class="download-btn">↓ DOWNLOAD</button>
+        </a>
+    </div>
+
+</div>
+
+<!-- JAPANESE BACKGROUND SCRIPT -->
+<script>
+const chars = "アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワンガギグゲゴザジズゼゾダヂヅデドパピプペポ";
+
+const bg = document.querySelector('.japanese-bg');
+
+for (let i = 0; i < 1200; i++) {
+    const s = document.createElement("span");
+    s.textContent = chars[Math.floor(Math.random() * chars.length)];
+
+    if (i % 3 === 0) s.style.color = "#ff4da6";
+    else if (i % 7 === 0) s.style.color = "#00b7ff";
+    else s.style.color = "#ffffff";
+
+    bg.appendChild(s);
+}
+</script>
+
+</body>
+</html>
